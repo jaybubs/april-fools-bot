@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  dy:
+    image: daddy:yankee
+    container_name: dy
+    restart: always
+    ports:
+      - "443:443"
+    volumes:
+      - "./config.json:/config.json"
